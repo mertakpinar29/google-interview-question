@@ -8,14 +8,14 @@ array = [
 ]
 
 
-def mix(val: int):
+def mix(value: int):
     """
     Hataları engellemek için girilen değerin max ve min değerlerin arasında kalmasını sağlar.
     """
-    return max(0, min(len(array) - 1, val))
+    return max(0, min(len(array) - 1, value))
 
 
-def explore(row, column):
+def explore(row: int, column: int):
     """
     Verilen karenin dört bir tarafındaki 1'leri bulur.
     """
